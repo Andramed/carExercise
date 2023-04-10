@@ -33,7 +33,21 @@ let kia = new Masina ('Kia Ceed', 'albastru', 2020, 220);
 let mercedes = new Masina ('Mercedes AMG', 'alb', 2023, 320);
 
 afiseazaMasinaSelectata.addEventListener('click', function () {
-	descriereMasine.textContent = `${selectMasina.value}`.descriere();
+	descriereMasine.textContent = `${selectMasina.value}.{descriere()`;
+	
+	if (selectMasina.value == 'ford') {
+		textcontent = ford.descriere()
+		descriereMasine.textContent = textcontent;
+	} else if (selectMasina.value == 'bmw') {
+		textcontent = bmw.descriere()
+		descriereMasine.textContent = textcontent;
+	} else if (selectMasina.value == 'kia') {
+		textcontent = kia.descriere()
+		descriereMasine.textContent = textcontent;
+	} else {
+		textcontent = mercedes.descriere()
+		
+	}
 })
 
 afiseazaMasinaInfoDescrisa.addEventListener('click', function(){

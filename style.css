@@ -1,0 +1,14 @@
+.formmasina {
+	width: 560px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+.container-radio-btn{
+	display: flex;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+}
